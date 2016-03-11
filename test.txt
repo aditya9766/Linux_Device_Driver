@@ -1,1 +1,4 @@
-Testing by adding new branch named test
+
+Testing by adding new branch named test.
+
+Checking test branch mergeing changes locally.
