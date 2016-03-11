@@ -1,0 +1,13 @@
+References:
+
+Linux:
+http://infoman.teikav.edu.gr/~stpapad/linux_kernel_development_3rd_edition.pdf
+http://free-electrons.com/doc/books/ldd3.pdf
+
+USB module:
+https://www.youtube.com/watch?v=NYRhkGrt4Q4
+https://www.youtube.com/watch?v=5IDL070RtoQ
+
+Git:
+https://www.udacity.com/course/viewer#!/c-ud775/l-2980038599/m-2960778924
+https://www.youtube.com/watch?v=cEGIFZDyszA&list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx
