@@ -10,6 +10,10 @@ static int pen_probe(struct usb_interface *interface, const struct usb_device_id
     struct usb_endpoint_descriptor *endpoint;
     int i;
  
+    printk(KERN_INFO "*****************************************************");
+    printk(KERN_INFO "Pen_probe function");
+    printk(KERN_INFO "*****************************************************");
+
     iface_desc = interface->cur_altsetting;
     printk(KERN_INFO "Pen i/f %d now probed: (%04X:%04X)\n",
             iface_desc->desc.bInterfaceNumber, id->idVendor, id->idProduct);
@@ -31,11 +35,17 @@ static int pen_probe(struct usb_interface *interface, const struct usb_device_id
     }
  
     device = interface_to_usbdev(interface);
+
     return 0;
 }
  
 static void pen_disconnect(struct usb_interface *interface)
 {
+
+    printk(KERN_INFO "*****************************************************");
+    printk(KERN_INFO "Pen_disconnect function");
+    printk(KERN_INFO "*****************************************************");
+
     printk(KERN_INFO "Pen i/f %d now disconnected\n",
             interface->cur_altsetting->desc.bInterfaceNumber);
 }
@@ -57,11 +67,17 @@ static struct usb_driver pen_driver =
  
 static int __init pen_init(void)
 {
+    printk(KERN_INFO "*****************************************************");
+    printk(KERN_INFO "Pen_register function");
+    printk(KERN_INFO "*****************************************************");
     return usb_register(&pen_driver);
 }
  
 static void __exit pen_exit(void)
 {
+    printk(KERN_INFO "*****************************************************");
+    printk(KERN_INFO "Pen_unregister function");
+    printk(KERN_INFO "*****************************************************");
     usb_deregister(&pen_driver);
 }
  
